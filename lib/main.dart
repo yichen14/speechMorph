@@ -20,16 +20,16 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp>{
   int _selectedTab = 0;
   final _pageOptions = [
-    SettingPage(),
-    HomePage(),
     SamplePage(),
-
+    HomePage(),
+    SettingPage(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primarySwatch: Colors.grey,
+          primarySwatch: Colors.blue,
           primaryTextTheme: TextTheme(
             title: TextStyle(color: Colors.white),
           )),
