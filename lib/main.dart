@@ -20,8 +20,8 @@ class MyApp extends StatefulWidget {
 class MyAppState extends State<MyApp>{
   int _selectedTab = 0;
   final _pageOptions = [
-    HomePage(),
     SettingPage(),
+    HomePage(),
     SamplePage(),
 
   ];
@@ -44,16 +44,16 @@ class MyAppState extends State<MyApp>{
           },
           items: [
             BottomNavigationBarItem(
+              icon: Icon(Icons.show_chart),
+              title: Text('Samples'),
+            ),
+            BottomNavigationBarItem(
               icon: Icon(Icons.home),
               title: Text('Home'),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.category),
-              title: Text('Categories'),
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              title: Text('Search'),
+              icon: Icon(Icons.settings),
+              title: Text('Settings'),
             ),
           ],
         ),
