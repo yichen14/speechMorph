@@ -1,47 +1,63 @@
 
 import 'package:flutter/material.dart';
 import 'package:test_app/base_layout.dart';
+import 'package:test_app/home_page.dart';
 import 'package:test_app/play_sounds_button.dart';
 import 'package:test_app/user_input.dart';
-import 'TextSection.dart';
-import 'image_banner.dart';
-import 'navigationState.dart';
+import 'text_section.dart';
+import 'sample_page.dart';
+import 'settings.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return MyAppState();
+  }
+}
+
+class MyAppState extends State<MyApp>{
+  int _selectedTab = 0;
+  final _pageOptions = [
+    HomePage(),
+    SettingPage(),
+    SamplePage(),
+
+  ];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Learning Flutter layout',
+      theme: ThemeData(
+          primarySwatch: Colors.grey,
+          primaryTextTheme: TextTheme(
+            title: TextStyle(color: Colors.white),
+          )),
       home: Scaffold(
-        backgroundColor: Colors.grey,
-        body: Stack(
-          children: <Widget>[
-            BaseLayout(),
-            new Column(
-                //mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  new Container(
-                    height:100,
-                  ),
-                  TextSection("Speech Morph"),
-                  new Container(
-                    height:400,
-                  ),
-                  UserInputWidget(),
-                  GenerateButtonWidget(),
-                  new Container(
-                    height:100,
-                  ),
-                  MyStatefulWidget(),
-                ],
+        body: _pageOptions[_selectedTab],
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _selectedTab,
+          onTap: (int index) {
+            setState(() {
+              _selectedTab = index;
+            });
+          },
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              title: Text('Home'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.category),
+              title: Text('Categories'),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              title: Text('Search'),
             ),
           ],
         ),
       ),
-
     );
   }
 }
