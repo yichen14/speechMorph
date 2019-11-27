@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/base_layout.dart';
 import 'package:test_app/home_page.dart';
-import 'package:test_app/play_sounds_button.dart';
+import 'package:test_app/generate_sounds_button.dart';
 import 'package:test_app/user_input.dart';
 import 'text_section.dart';
 import 'sample_page.dart';

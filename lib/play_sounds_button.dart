@@ -1,13 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class GenerateButtonWidget extends StatefulWidget{
-  GenerateButtonWidget({Key key}) : super(key: key);
+class PlaySoundsWidget extends StatefulWidget{
+  PlaySoundsWidget({Key key}) : super(key: key);
 
   @override
-  GenerateButtonState createState() => GenerateButtonState();
+  PlaySoundsState createState() => PlaySoundsState();
 }
 
-class GenerateButtonState extends State<GenerateButtonWidget>{
+class PlaySoundsState extends State<PlaySoundsWidget>{
 
   void _onPressed() {
     setState(() {
@@ -18,17 +19,18 @@ class GenerateButtonState extends State<GenerateButtonWidget>{
   Widget build(BuildContext context) {
     return new Container(
       child: new Center(
-        child: new Column(
-            children: <Widget>[
-              RaisedButton(
-                  child: new Text("Generate"),
-                  color: Colors.blue,
-                  onPressed: _onPressed,
-              )
-            ],
-          )
-        ),
-      );
+            child: new Container(
+              width: 190,
+              height: 190,
+              child: FlatButton(
+                padding: EdgeInsets.all(0.0),
+                onPressed: _onPressed,
+                child: Image.asset("SpeechMorphAssets/images/button.png"),
+
+              ),
+            )
+          ),
+    );
 
   }
 }
