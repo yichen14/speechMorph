@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     ScreenUtil.instance = ScreenUtil(width: 1080, height: 2280)..init(context);
     return MaterialApp(
-      title: 'Learning Flutter layout',
+      //title: 'Learning Flutter layout',
       home: Scaffold(
         backgroundColor: Colors.grey,
         body: Stack(
