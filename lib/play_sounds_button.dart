@@ -45,7 +45,6 @@ class PlaySoundsState extends State<PlaySoundsWidget>{
                 padding: EdgeInsets.all(0.0),
                 onPressed: _onPressed,
                 child: Image.asset("SpeechMorphAssets/images/button.png"),
-
               ),
             )
           ),

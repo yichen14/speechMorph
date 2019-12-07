@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp>{
-  int _selectedTab = 0;
+  int _selectedTab = 1;
   final _pageOptions = [
     SamplePage(),
     HomePage(),
