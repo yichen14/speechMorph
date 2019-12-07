@@ -28,11 +28,10 @@ class GenerateButtonState extends State<GenerateButtonWidget>{
                   child: new Text("Generate"),
                   color: Colors.blue,
                   onPressed: _onPressed,
-              )
-            ],
-          )
-        ),
-      );
-
+            )
+          ],
+        )
+      ),
+    );
   }
 }
