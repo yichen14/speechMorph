@@ -50,10 +50,26 @@ class CardSection extends StatelessWidget {
           child: Column(
             children: <Widget>[
               new Container(
-                height:ScreenUtil.getInstance().setHeight(50),
+                height:ScreenUtil.getInstance().setHeight(80),
               ),
-              TextSection(ch,40),
-              TextSection(eng,40)
+              Text(
+                ch,
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Color((0xFF75767E)),
+                ),
+              ),
+              //TextSection(ch,40),
+              new Container(
+                height:ScreenUtil.getInstance().setHeight(30),
+              ),
+              Text(
+                eng,
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Color((0xFFDDB57E)),
+                ),
+              ),
             ],
           ),
         ),

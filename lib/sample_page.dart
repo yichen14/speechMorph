@@ -40,9 +40,9 @@ class SamplePage extends StatelessWidget{
                 new Container(
                   height:ScreenUtil.getInstance().setHeight(40),
                 ),
-                CardSection("宁好 [ning hao]","Hello!",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
-                CardSection("吃了吗 [chi le ma]","Do u eat the dinner?",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
-                CardSection("晚安 [wan an]","Goodnight",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
+                CardSection("您好 [nín hǎo]","Hello!",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
+                CardSection("吃了吗 [chī le ma]","Do u eat the dinner?",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
+                CardSection("晚安 [wǎn ān]","Goodnight",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
               ],
             ),
           ],
