@@ -12,24 +12,13 @@ class SettingPage extends StatelessWidget{
         body: Stack (
           children: <Widget> [
             new Column (
-              children: <Widget> [
-                Text('Setting',
-                  style: TextStyle(fontSize: 40.0)
-                ),
-
-
-                /*
-                new ListView.builder(
-                  itemBuilder: (BuildContext context, int index) {
-                    return new StuffInTiles(listOfTiles[index]);
-                  },
-                  itemCount: listOfTiles.length,
-                ),
-                */
-
-                ChooseStyleButtonWidget(),
-                DeveloperInfoButtonWidget(),
-              ]
+                children: <Widget> [
+                  Text('Setting',
+                      style: TextStyle(fontSize: 40.0)
+                  ),
+                  ChooseStyleButtonWidget(),
+                  DeveloperInfoButtonWidget(),
+                ]
             )
           ],
         ),
