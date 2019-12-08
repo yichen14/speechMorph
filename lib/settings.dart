@@ -16,6 +16,18 @@ class SettingPage extends StatelessWidget{
                 Text('Setting',
                   style: TextStyle(fontSize: 40.0)
                 ),
+<<<<<<< HEAD
+=======
+
+                /*
+                new ListView.builder(
+                  itemBuilder: (BuildContext context, int index) {
+                    return new StuffInTiles(listOfTiles[index]);
+                  },
+                  itemCount: listOfTiles.length,
+                ),
+                */
+>>>>>>> cad08d1a4665a683eb8acfea3dc0a1072f15c4f7
                 ChooseStyleButtonWidget(),
                 DeveloperInfoButtonWidget(),
               ]
