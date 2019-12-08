@@ -26,12 +26,19 @@ class SamplePage extends StatelessWidget{
                 Text(
                     "Project Sample",
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 40,
                       color: Colors.orange,
                     )
                 ),
                 new Container(
-                  height:ScreenUtil.getInstance().setHeight(80),
+                  height:ScreenUtil.getInstance().setHeight(40),
+                ),
+                new Container(
+                  height: 2,
+                  color: Colors.white,
+                ),
+                new Container(
+                  height:ScreenUtil.getInstance().setHeight(40),
                 ),
                 CardSection("宁好 [ning hao]","Hello!",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
                 CardSection("吃了吗 [chi le ma]","Do u eat the dinner?",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
