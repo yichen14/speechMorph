@@ -49,7 +49,7 @@ class DeveloperInfoButtonState extends State<DeveloperInfoButtonWidget> {
               onPressed: () {
                 Navigator.pop(context, DeveloperInfo.backEnd);
               },
-              child: const Text('Back End: Chenhui Zhang, Yihong jian')
+              child: const Text('Back End: Chenhui Zhang, Yihong Jian')
             )
           ],
         );
