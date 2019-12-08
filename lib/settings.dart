@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'choose_style_button.dart';
 import 'developer_info_button.dart';
+import 'text_section.dart';
 
 class SettingPage extends StatelessWidget{
   @override
@@ -12,10 +13,9 @@ class SettingPage extends StatelessWidget{
         body: Stack (
           children: <Widget> [
             new Column (
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget> [
-                Text('Setting',
-                  style: TextStyle(fontSize: 40.0)
-                ),
+                TextSection("Settings", 40),
                 ChooseStyleButtonWidget(),
                 DeveloperInfoButtonWidget(),
               ]

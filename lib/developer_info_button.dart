@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
 
 enum DeveloperInfo{ frontEnd, backEnd }
 
@@ -23,9 +24,7 @@ class DeveloperInfoButtonState extends State<DeveloperInfoButtonWidget> {
                 openDialog();
               },
               child: 
-              Text('Developer Info',
-              style: TextStyle(fontSize: 30.0)
-              ),
+              TextSection("Developer Info", 30),
             ),
           ],
         ),
