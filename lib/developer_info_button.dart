@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
 
 enum DeveloperInfo{ frontEnd, backEnd }
 
@@ -23,9 +24,7 @@ class DeveloperInfoButtonState extends State<DeveloperInfoButtonWidget> {
                 openDialog();
               },
               child: 
-              Text('Developer Info',
-              style: TextStyle(fontSize: 30.0)
-              ),
+              TextSection("Developer Info", 30),
             ),
           ],
         ),
@@ -49,7 +48,7 @@ class DeveloperInfoButtonState extends State<DeveloperInfoButtonWidget> {
               onPressed: () {
                 Navigator.pop(context, DeveloperInfo.backEnd);
               },
-              child: const Text('Back End: Chenhui Zhang, Yihong jian')
+              child: const Text('Back End: Chenhui Zhang, Yihong Jian')
             )
           ],
         );

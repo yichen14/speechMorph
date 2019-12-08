@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text_section.dart';
 
 class ChooseStyleButtonWidget extends StatefulWidget {
   ChooseStyleButtonWidget({Key key}) : super(key : key);
@@ -18,9 +19,7 @@ class ChooseStyleButtonState extends State<ChooseStyleButtonWidget> {
         new Row(
           children: <Widget>[
             new Icon(Icons.person),
-            Text('Speech Style',
-            style: TextStyle(fontSize: 30.0)
-            ),
+            TextSection("Speech Style", 30),
             PopupMenuButton<ChoiceOfSpeechStyle> (
               initialValue: choices[0],
               onCanceled: () => print("You didn't choose anything"),
