@@ -16,7 +16,6 @@ class ChooseStyleButtonState extends State<ChooseStyleButtonWidget> {
     return new Column (
       children: <Widget>[
         new Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             new Icon(Icons.person),
             Text('Speech Style',
@@ -35,36 +34,15 @@ class ChooseStyleButtonState extends State<ChooseStyleButtonWidget> {
                 }).toList();
               },
             ),
-           //getListView(),
           ],
         ),
       ],
     );
   }
-  /*
-  Widget getListView() {
-    var listView = ListView (
-      children: <Widget> [
-        ListTile(
-          leading: Icon(Icons.person),
-          title: Text("Developer Info"),
-          onTap: () {
-            return showDialog(context: context, builder: (context) {
-              return AlertDialog(
-                content: Text('Front end: Eason Lu, Alexa Hu')
-              );
-            });
-          },
-        ),
-      ],
-    );
-    return listView;
-  }
-  */
 
   void choiceAction(ChoiceOfSpeechStyle choice) {
     setState(() {
-      selectedChoice = choice;
+      selectedChoice = choice;//some changes
       });
   }
 }
@@ -78,4 +56,3 @@ List<ChoiceOfSpeechStyle> choices = <ChoiceOfSpeechStyle> [
   new ChoiceOfSpeechStyle(title: 'Trump'),
   new ChoiceOfSpeechStyle(title: 'Hillary'),
 ];
-
