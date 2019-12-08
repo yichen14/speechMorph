@@ -18,17 +18,15 @@ class DeveloperInfoButtonState extends State<DeveloperInfoButtonWidget> {
         new Row(
           children: <Widget>[
             new Icon(Icons.person),
-            Text('Developer Info',
-            style: TextStyle(fontSize: 30.0)
-            ),
             new FlatButton(
               onPressed: () {
                 developerInfoDialog();
               },
-              child: (
-                Text("Developer Info")
-              )
-            )
+              child: 
+              Text('Developer Info',
+              style: TextStyle(fontSize: 30.0)
+              ),
+            ),
           ],
         ),
       ],
