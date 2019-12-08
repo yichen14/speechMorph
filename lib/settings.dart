@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'choose_style_button.dart';
+import 'developer_info_button.dart';
 
-=======
-import 'draftCode.dart';
-import 'choose_style_button.dart';
->>>>>>> 9b2eb8bb1ceb399a4890174cf68ebe36594dd56c
 class SettingPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -20,7 +16,6 @@ class SettingPage extends StatelessWidget{
                 Text('Setting',
                   style: TextStyle(fontSize: 40.0)
                 ),
-<<<<<<< HEAD
                 /*
                 new ListView.builder(
                   itemBuilder: (BuildContext context, int index) {
@@ -29,10 +24,8 @@ class SettingPage extends StatelessWidget{
                   itemCount: listOfTiles.length,
                 ),
                 */
-=======
-
->>>>>>> 9b2eb8bb1ceb399a4890174cf68ebe36594dd56c
-                ChooseStyleButtonWidget()
+                ChooseStyleButtonWidget(),
+                DeveloperInfoButtonWidget(),
               ]
             )
           ],
