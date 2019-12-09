@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.grey,
         body: Stack(
           children: <Widget>[
-            BaseLayout("SpeechMorphAssets/images/homepage_bgd.png"),
+            BaseLayout("assets/images/homepage_bgd.png"),
             new Column(
               //mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,

@@ -44,7 +44,7 @@ class PlaySoundsState extends State<PlaySoundsWidget>{
               child: FlatButton(
                 padding: EdgeInsets.all(0.0),
                 onPressed: _onPressed,
-                child: Image.asset("SpeechMorphAssets/images/button.png"),
+                child: Image.asset("assets/images/button.png"),
               ),
             )
           ),

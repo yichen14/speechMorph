@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'text_section.dart';
+import 'package:audioplayers/audio_cache.dart';
 
 class CardSection extends StatelessWidget {
   final String soundAsset;
@@ -10,14 +10,12 @@ class CardSection extends StatelessWidget {
   int playOrNot = 0;
   CardSection(this.ch, this.eng,this.soundAsset);
   AudioPlayer audioPlayer = AudioPlayer();
+  AudioCache player = AudioCache();
   play(String _soundAsset) async {
-    int result = await audioPlayer.play(_soundAsset);
-    if (result == 1) {
-      // success
-    }
+    player.play(_soundAsset);
   }
   stop() async {
-    int result = await audioPlayer.stop();
+
   }
   @override
   Widget build(BuildContext context){

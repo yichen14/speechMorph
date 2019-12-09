@@ -3,6 +3,7 @@ import 'package:test_app/sample_card.dart';
 import 'package:test_app/text_section.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'base_layout.dart';
+
 import 'package:audioplayers/audioplayers.dart';
 
 class SamplePage extends StatelessWidget{
@@ -40,9 +41,9 @@ class SamplePage extends StatelessWidget{
                 new Container(
                   height:ScreenUtil.getInstance().setHeight(40),
                 ),
-                CardSection("您好 [nín hǎo]","Hello!",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
-                CardSection("吃了吗 [chī le ma]","Do u eat the dinner?",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
-                CardSection("晚安 [wǎn ān]","Goodnight",'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3'),
+                CardSection("您好 [nín hǎo]","Hello!",'audios/test.mp3'),
+                CardSection("吃了吗 [chī le ma]","Do u eat the dinner?",'audios/result-5.wav'),
+                CardSection("晚安 [wǎn ān]","Goodnight",'audios/result-5.wav'),
               ],
             ),
           ],
